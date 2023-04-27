@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
 
 return (
-  <div>
+  <div className="foot">
     Little Lemon Restuarant © 2023. All rights reserved.
   </div>
 )
