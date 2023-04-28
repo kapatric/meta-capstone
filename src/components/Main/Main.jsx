@@ -5,6 +5,11 @@ export default function Main() {
   
   return (
     <div className="container">
+      <div className="grid-item">Specials</div>
+      <div className="grid-item"></div>
+      <div className="grid-item">
+        <button>Order Online</button>
+      </div>
       <div className="grid-item">pop</div>
       <div className="grid-item">pop</div>
       <div className="grid-item">pop</div>
