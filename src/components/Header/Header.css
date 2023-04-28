@@ -1,0 +1,14 @@
+header {
+  background-color: #547379b0;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+}
+
+.btn {
+display: flex;
+height: 195px;
+margin-left: 5px;
+justify-content: left;
+align-items: end;
+}
