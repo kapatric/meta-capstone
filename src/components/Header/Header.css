@@ -7,8 +7,23 @@ header {
 
 .btn {
 display: flex;
-height: 195px;
-margin-left: 5px;
+height: 45px;
 justify-content: left;
 align-items: flex-end;
+
+}
+
+button {
+  background-color: black;
+  color: azure;
+  font-size: medium;
+  padding: 5px 15px 5px 15px;
+}
+
+h5 {
+  margin: 0;
+}
+
+.lemon {
+margin-left: 10%;
 }

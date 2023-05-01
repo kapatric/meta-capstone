@@ -1,7 +1,7 @@
 .foot {
-  text-align:right;
   font-size: small;
   margin-right: 5px;
-  position: relative;
+  position: fixed;
   bottom: 0;
+  right:0;
 }
