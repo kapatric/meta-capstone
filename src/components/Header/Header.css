@@ -10,5 +10,5 @@ display: flex;
 height: 195px;
 margin-left: 5px;
 justify-content: left;
-align-items: end;
+align-items: flex-end;
 }
