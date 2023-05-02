@@ -2,15 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import About from './Pages/About/About';
+import Menu from './Pages/Menu/Menu';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
+export default function Page() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
     <App />
-  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
