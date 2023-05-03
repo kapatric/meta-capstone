@@ -6,21 +6,19 @@ import Footer from './components/Footer/Footer';
 import { Routes, Route } from "react-router-dom";
 import About from './Pages/About/About';
 import Menu from './Pages/Menu/Menu';
+import Home from './Pages/Home/Home';
+import Reservations from './Pages/Reservations/Reservations';
 
 function App() {
-  
   return (
     <>
       <Nav />
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Menu" element={<Menu />} />
-      </Routes>
-      <Header/>
-      <Main />
-      <Footer /> 
-      
+        <Route path="/Reservations" element={<Reservations />} />
+      </Routes> 
     </>
   );
 }

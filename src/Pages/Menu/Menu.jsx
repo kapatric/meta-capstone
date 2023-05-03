@@ -1,5 +1,6 @@
 import React from "react";
 import "./Menu.css";
+import Footer from "../../components/Footer/Footer";
 
 
 
@@ -8,7 +9,8 @@ export default function Menu() {
     <> 
       <div className="menu">
         <img src="menu.jpeg" alt="" />
-        </div>
+      </div>
+      <Footer/>
     </>
   );
 }
