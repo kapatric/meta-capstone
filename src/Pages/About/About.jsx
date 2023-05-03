@@ -1,13 +1,10 @@
 import React from "react";
-import "./About.css"
-import Nav from '../../components/Nav/Nav.jsx'
-
+import "./About.css";
 
 export default function About() {
   return (
     <>
-    <Nav/>
-    <div>
+    <div className="about">
       <p>About Restaurant</p>
     </div>
     </>

@@ -1,9 +1,4 @@
-.about-container{
-  display: flex;
-  flex-direction: column;
-  margin: 100px;
-  height: 500px;
-  max-width: 100%;
-  gap: 50px;
-  overflow: scroll;
+.about {
+  text-align: center;
+  margin-top: 125px;
 }

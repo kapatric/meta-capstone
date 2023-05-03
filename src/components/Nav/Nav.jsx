@@ -16,6 +16,6 @@ export default function Nav() {
           <li><a href="/login" className="login">Login</a></li>
         </ul>
       </nav>
-    )
-
+    );
+   
   }
