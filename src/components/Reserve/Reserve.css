@@ -1,0 +1,13 @@
+.reserve {
+display: flex-box;
+max-width: 11rem;
+margin-top: 10%;
+padding: 1rem;
+border-color: #EE9972;
+border-style: solid;
+border-width: 0.25rem;
+}
+
+label {
+  gap: 3rem;
+}
