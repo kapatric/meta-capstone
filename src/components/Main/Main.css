@@ -2,22 +2,22 @@
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 5px;
-  height: 350px;
+  height: 3rem;
 }
 
 .grid-item {
   display: inline;
-  padding: 5px;
+  padding: 1rem;
   text-align: center;
 }
 .grid-item-4 {
-  padding: 5px;
+  padding: 1rem;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 img {
-  border-radius: 10px;
+  border-radius: 1rem;
   border-color: #E4CE14;
   border-style: solid;
   border-width: 6px;

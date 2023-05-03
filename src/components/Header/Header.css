@@ -1,13 +1,13 @@
 header {
   background-color: #547379b0;
-  height: 200px;
-  margin: 50px;
+  height: 12.5rem;
+  margin: 3rem;
   position: relative;
 }
 
 .btn {
 display: flex;
-height: 45px;
+height: 2.5rem;
 justify-content: left;
 align-items: flex-end;
 
@@ -18,7 +18,7 @@ button {
   color: azure;
   font-size: medium;
   padding: 5px 15px 5px 15px;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 h5 {
