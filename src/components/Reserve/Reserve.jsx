@@ -3,22 +3,29 @@ import "./Reserve.css";
 
 export default function Reserve() {
   const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
   const dateInputRef = useRef(null);
+  const timeInputRef = useRef(null);
+  
 
   const handleChange = (e) => {
     setDate(e.target.value);
+  };
+
+  const handleTime = (e) => {
+    setTime(e.target.value);
   };
 
   return (
     <center>
     <form className="reserve">
       <h3>Make a Resevation</h3>
-        <label for="date">Date: {date }</label>
+        <label for="date">Date: {date}</label>
         <input type="date" id="date" onChange={handleChange} ref={dateInputRef } />
         <br></br>
         <br></br>
-      <label for="res_time">Time: </label>
-      <select id="res_time">
+        <label for="res_time">Time: {time} </label>
+      <select id="res_time" onChange={handleTime} ref={timeInputRef}>
         <option>11:00</option>
         <option>12:00</option>
         <option>1:00</option>
