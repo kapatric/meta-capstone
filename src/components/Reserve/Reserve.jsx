@@ -1,16 +1,24 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import "./Reserve.css";
 
 export default function Reserve() {
+  const [date, setDate] = useState('');
+  const dateInputRef = useRef(null);
+
+  const handleChange = (e) => {
+    setDate(e.target.value);
+  };
+
   return (
     <center>
     <form className="reserve">
       <h3>Make a Resevation</h3>
-      <label>
-        Date: <input type="date" id="date"></input>
-      </label>
-      Time:{" "}
-      <select id="res-time">
+        <label for="date">Date: {date }</label>
+        <input type="date" id="date" onChange={handleChange} ref={dateInputRef } />
+        <br></br>
+        <br></br>
+      <label for="res_time">Time: </label>
+      <select id="res_time">
         <option>11:00</option>
         <option>12:00</option>
         <option>1:00</option>
@@ -24,9 +32,9 @@ export default function Reserve() {
         <option>9:00</option>
         <option>10:00</option>
       </select>
-      <br></br>
-      <label>
-        Party Size: 
+        <br></br>
+        <br></br>
+      <label for="guests">Party Size: </label> 
         <input
           type="number"
           placeholder="1"
@@ -34,19 +42,25 @@ export default function Reserve() {
           max="8"
           id="guests"
         ></input>
-      </label>
-      <label for="occasion"></label>
-      Occasion:{" "}
+        <br></br>
+        <br></br>
+        <label for="occasion">Occasion: </label>
       <select id="occasion">
         <option>Birthday</option>
         <option>Anniversary</option>
         <option>Engagement</option>
         <option>Retirement</option>
-      </select>
+        </select>
+        <br></br>
+        <br></br>
+        <label for="phone-number">Phone: </label>
+        <input type="number" id="phone_number" name="phone_number" minLength={10} maxLength={10} />
+        <label for="user_email">Email: </label>
+       <input type="email" id="user_email" name="user_email"/>
       <br></br>
       <br></br>
       <center>
-        <input className="submit" type="submit" value="Make a reservation" />
+       <input className="submit" type="submit" value="Make a reservation" />
       </center>
       </form>
       </center>
